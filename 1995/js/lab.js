@@ -1,6 +1,7 @@
 // index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Author: Nadia Yasin
+// Date: 9 June 2025
+//Javascript for 1995-2005 Page
 
 // Constants
 
