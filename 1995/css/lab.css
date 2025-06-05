@@ -1,69 +1,65 @@
 /* Nadia Yasin CSS
 CSS for 1995-2005 Page*/
 
-.navButton {
-  background: linear-gradient(45deg, #66587a, #49395f);
-  size: 16px;
-  color: #c0f6f6;
-  margin: 15px;
-  /*margin-left: 625px;*/
-  padding: 14px 32px;
-  font-size: 14px;
-  border: 2px solid #c0f6f6;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(155, 216, 216, 0.3);
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
+/* CSS for index.html*/
 
-.navButton:hover {
-  background: linear-gradient(45deg, #9492c0, #7f6f99);
-  color: #1e1b2f;
-  box-shadow: 0 0 20px rgba(208, 245, 245, 0.5);
-  transform: scale(1.05);
-}
+  .navButton {
+    background: linear-gradient(45deg, #66587a, #49395f);
+    size: 16px;
+    color: #c0f6f6;
+    margin: auto;
+    /*margin-left: 625px;*/
+    padding: 14px 32px;
+    font-size: 14px;
+    border: 2px solid #c0f6f6;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(155, 216, 216, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
 
-.titleforpage {
-  text-align: center;
-}
+  .navButton:hover {
+    background: linear-gradient(45deg, #9492c0, #7f6f99);
+    color: #1e1b2f;
+    box-shadow: 0 0 20px rgba(208, 245, 245, 0.5);
+    transform: scale(1.05);
+  }
 
-h2 {
-  text-align: center;
-}
+  .nav-button-box {
+  display: flex; 
+  justify-content: center; 
+  align-items: center
+  }
 
-#folderdesktop {
-  max-width: 100%;
-}
+  .titleforpage {
+    text-align: center;
+  }
 
-body {
-  background-image: url(../img/HD-Windows-XP-Wallpaper-Backgrounds.jpg);
-  background-size: cover;
-}
+  h2 {
+    text-align: center;
+    color: black;
+  }
 
-/*.parent-container {
-  position: relative; 
-}
+  h1 {
+    color: black;
+  }
 
-#input {
-  position: absolute;
-  top: 30.2%;
-  left: 37.1%;
-  z-index: 10;
-}*/
+  p {
+    color: black;
+  }
 
-#pixalcomputer {
+  #pixalcomputer {
   display: block;
   margin: auto;
-  width: 50%;
+  width: 15%;
   position: center;
-}
+  }
 
-
-
+/*
 .parent-container {
-  position: relative; /* Make this the positioning context */
+  position: relative; /* Make this the positioning context 
 }
 
 #browser-window {
@@ -89,10 +85,7 @@ body {
   top: 25.5px;
   left: 92.2%;
 }
-
-
-
-
+*/
 
 
 

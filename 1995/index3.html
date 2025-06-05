@@ -1,0 +1,106 @@
+<!--Nadia Yasin HTML
+HTML for 1995-2005 Page-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> 1995 </title>
+  	<meta charset="UTF-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/lab2.css">
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+</head>
+
+<body>
+
+    <div id="opening-computer">
+
+        <h2 id="starter-text">Oops, almost forgot! </br> You'll have to hit the start button first! </h2>
+
+        <!-- Got help from Wesbot to create buttons that changes the images on the site -->
+        <!-- Clickable image button that changes the backgroundof the site -->
+        <img id="first-button" src="./img/windows-start-button-trans.png" onclick="changeBackgroundImage(this); firstButtonClicked();">
+
+    </div>
+
+    <img id="second-button" src="./img/mycomputericontrans.webp" style="display: none;" onclick="document.getElementById('content').style.display='block'; 
+    this.style.display='none'; document.getElementById('content').style.backgroundColor = 'yellow';">
+
+    <img id="fake-icon1" src="img/windows-xp-star-folder.png" style="display: none;" onclick="document.getElementById('content').style.display='block'; 
+    this.style.display='none'";>
+
+
+    
+
+    
+
+
+
+    <!-- <img id="show-content" src="./img/newspaper.gif"> -->
+
+    <div id="content" style="display: none;">
+        <p>im here</p>
+    
+
+        <script>
+        $(document).ready(function() {
+            $('#show-content').click(function() {
+                $('#content').show();
+                $(this).hide();
+            });
+        });
+        </script>
+
+
+
+        <h1>Year in Review (1995 - 2005)</h1>
+
+        <label for="year-select">Choose a year:</label>
+        <select id="year-select">
+            <option value="">--Select a year--</option>
+            <!-- Generate year options from 1995 to 2005 -->
+            <script>
+                for (let year = 1995; year <= 2005; year++) {
+                    document.write(`<option value="${year}">${year}</option>`);
+                }
+            </script>
+        </select>
+
+        <div id="year-info" class="info-box">
+            <h2 id="info-year"></h2>
+
+            <h3>Major News</h3>
+            <p id="news"></p>
+
+            <h3>Technology</h3>
+            <p id="technology"></p>
+
+            <h3>Pop Culture</h3>
+            <p id="pop-culture"></p>
+        </div>
+
+        <div class="sorting-images">                
+            <div class="row">
+                <div class="column">
+                    <img src="img/windows-xp-star-folder.png" alt="Star" style="width:85%">
+                </div>
+                <div class="column">
+                    <img src="img/jscodepost1.png" alt="Rito" style="width:100%">
+                </div>
+            </div>
+                            
+            <div class="row2">
+                <div class="column">
+                    <img src="img/jscodepost2.png" alt="Goron" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="img/consoleworking.png" alt="Gerudo" style="width:100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

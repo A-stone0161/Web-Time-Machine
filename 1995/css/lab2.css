@@ -1,0 +1,79 @@
+/* Nadia Yasin CSS
+CSS for 1995-2005 Page*/
+
+/* CSS for index 3 html */
+  .info-box {
+    margin-top: 30px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  label, select {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .row {
+  display: flex;
+  }
+
+  .row2 {
+    display: flex;
+  }
+
+  /* Create three equal columns that sits next to each other */
+  .column {
+    display: flex;
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+  .sorting-images {
+  display: flex; 
+  justify-content: flex-end;
+  width: 100%;
+  }
+
+  /* body {
+  background-image: url(../img/HD-Windows-XP-Wallpaper-Backgrounds.jpg);
+  background-size: cover;
+  } */
+
+  
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#content {
+    width: 100%;
+}
+
+#second-button {
+    display: block;
+    margin: auto;
+    width: 4%;
+    position: center;
+    padding-left: 566px;
+    padding-top: 200px;
+}
+
+
+
+#first-button {
+    display: block;
+    margin: auto;
+    width: 90%;
+    position: center;
+    margin-top: 25%;
+}
+
+#starter-text {
+    text-align: center;
+}
+
+
