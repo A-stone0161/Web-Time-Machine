@@ -1,0 +1,20 @@
+body {
+  background-image: url(../img/cheetah.png);
+      font-family: 'MyFont';
+}
+
+#content {
+    max-width:100%;
+    margin: 20px;
+    padding: 20px;
+    border: solid 7px #000000;
+    background-color: #ffffff;
+}
+
+/* Changes font type, credit WesBot */
+@font-face {
+    font-family: 'MyFont';
+    src: url('../img/FlowerBlossom-JpA9a.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
