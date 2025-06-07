@@ -16,7 +16,7 @@ CSS for 1995-2005 Page*/
     font-size: 18px;
   }
 
-  .row {
+  /* .row {
   display: flex;
   }
 
@@ -24,18 +24,84 @@ CSS for 1995-2005 Page*/
     display: flex;
   }
 
-  /* Create three equal columns that sits next to each other */
-  .column {
+  .row3 {
     display: flex;
-    flex: 33.33%;
-    padding: 5px;
   }
 
-  .sorting-images {
-  display: flex; 
-  justify-content: flex-end;
-  width: 100%;
+  /* Create three equal columns that sits next to each other */
+  /* .column {
+    display: flex;
+    flex: 33.33%;
+    padding: 45px;
   }
+
+  .column3 {
+    display: flex;
+    flex: 33.33%;
+    padding: 45px;
+  }
+
+  #sorting-images {
+  display: flex; 
+  justify-content: space-around;
+  width: 100%;
+  } */ 
+
+/* Desktop Icons Css */
+  #icon1 {
+    position: absolute;
+    top: 15px;
+    left: 42px;
+  }
+
+  #icon2 {
+    position: absolute;
+    top: 640px;
+    left: 1468px;
+  }
+
+  #icon3 {
+    position: absolute;
+    top: 161px;
+    left: 1335px;
+  }
+
+  #icon4 {
+    position: absolute;
+    top: 187px;
+    left: 67px;
+  }
+
+  #icon5 {
+    position: absolute;
+    top: 112px;
+    left: 110px;
+  }
+
+  #icon6 {
+    position: absolute;
+    top: 637px;
+    left: 1393px;
+  }
+
+  #icon7 {
+    position: absolute;
+    top: 248px;
+    left: 149px;
+  }
+
+  #icon8 {
+    position: absolute;
+    top: 319px;
+    left: 1199px;
+  }
+
+  #icon9 {
+    position: absolute;
+    top: 380px;
+    left: 1316px;
+  }
+
 
   /* body {
   background-image: url(../img/HD-Windows-XP-Wallpaper-Backgrounds.jpg);
@@ -50,11 +116,15 @@ body {
 }
 
 #content {
+  display: block;
     width: 100%;
+    border: 2px solid red;
+    background-color: yellow;
+    z-index: 2;
 }
 
 #second-button {
-    display: block;
+    /*display: block;*/
     margin: auto;
     width: 4%;
     position: center;

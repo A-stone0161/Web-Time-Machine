@@ -96,14 +96,27 @@ function changeBackgroundImage(button) {
 }
 
 
-var secondButton = false;
+var clicked = false;
 
 function firstButtonClicked() {
-    secondButton = true;
+    clicked = true;
     document.getElementById('second-button').style.display = 'inline';
     document.getElementById('starter-text').style.display = 'none';
-    document.getElementById('fake-icon1').style.display = 'inline';
+    document.getElementById('desktop-icons').style.display = 'inline';
+    
 }
+
+var clicked2 = false;
+
+function contentButtonClicked() {
+    clicked2 = true;
+    // document.getElementById('desktop-icons').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+    console.log("Content display:", document.getElementById('content').style.display);
+    document.getElementById('content').style.backgroundColor = 'yellow';
+}
+
+
 
 
 
