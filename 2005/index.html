@@ -14,9 +14,261 @@
 				<div class="navigation">
 					<h2>Return to the Time Machine</h2></a>
 				</div>
-		
+				<style>
+					body {
+					  font-family: 'Trebuchet MS', sans-serif;
+					  background: linear-gradient(to bottom, #c9d6e3, #ffffff);
+					  color: #333;
+					  margin: 0;
+					  padding: 20px;
+					}
+				
+					h1 {
+					  text-align: center;
+					  color: #002f5f;
+					  text-shadow: 1px 1px 1px #ccc;
+					}
+				
+					.folder-bar {
+					  display: flex;
+					  justify-content: center;
+					  gap: 20px;
+					  margin-top: 30px;
+					}
+				
+					.folder {
+					  background: linear-gradient(to bottom, #f6f6f6, #d8e2ec);
+					  border: 2px solid #a3b5c4;
+					  padding: 15px 25px;
+					  border-radius: 8px;
+					  cursor: pointer;
+					  font-weight: bold;
+					  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+					  transition: background 0.3s;
+					}
+				
+					.folder:hover {
+					  background: #e0ecf5;
+					}
+				
+					.event-section {
+					  display: none;
+					  margin-top: 30px;
+					}
+				
+					.event-container {
+					  display: grid;
+					  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+					  gap: 20px;
+					}
+				
+					.event-card {
+					  background: #f7f7f7;
+					  border: 2px solid #c0d3e2;
+					  border-radius: 10px;
+					  padding: 15px;
+					  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+					  cursor: pointer;
+					  transition: transform 0.3s;
+					}
+				
+					.event-card:hover {
+					  transform: scale(1.02);
+					}
+				
+					.event-title {
+					  font-size: 18px;
+					  font-weight: bold;
+					  color: #2c3e50;
+					}
+				
+					.event-description {
+					  font-size: 14px;
+					  color: #555;
+					}
+				
+					.quote-box {
+					  display: none;
+					  background: #e8f4fc;
+					  border-left: 5px solid #4a90e2;
+					  padding: 10px;
+					  margin-top: 10px;
+					  font-style: italic;
+					}
+				
+					.event-image {
+					  display: none;
+					  margin-top: 10px;
+					  max-width: 100%;
+					  border-radius: 6px;
+					  border: 2px solid #c0d3e2;
+					}
+				  </style>
+				</head>
+				<body>
+				
+				  <h1>2005 Time Capsule</h1>
+				
+				  <div class="folder-bar">
+					<div class="folder" onclick="showCategory('politics')">📁 Political / Global</div>
+					<div class="folder" onclick="showCategory('tech')">📁 Tech Stuff</div>
+					<div class="folder" onclick="showCategory('culture')">📁 Pop Culture</div>
+				  </div>
+				
+				  <div class="event-section" id="politics">
+					<h2>Political & Global Events</h2>
+					<div class="event-container" id="politics-container"></div>
+				  </div>
+				
+				  <div class="event-section" id="tech">
+					<h2>Tech Innovations</h2>
+					<div class="event-container" id="tech-container"></div>
+				  </div>
+				
+				  <div class="event-section" id="culture">
+					<h2>Pop Culture Moments</h2>
+					<div class="event-container" id="culture-container"></div>
+				  </div>
+				
+				  <script>
+					const allSections = ['politics', 'tech', 'culture'];
+				
+					function showCategory(id) {
+					  allSections.forEach(section => {
+						document.getElementById(section).style.display = (section === id) ? 'block' : 'none';
+					  });
+					}
+				
+					const eventsData = {
+					  politics: [
+						{
+						  title: "Hurricane Katrina",
+						  description: "Hurricane Katrina devastated New Orleans, displacing hundreds of thousands.",
+						  quote: `"We’ve been stuck in Houston for days now... I miss home." — Anonymous evacuee`,
+						  img: "https://www.britannica.com/event/Hurricane-Katrina"
+						},
+						{
+						  title: "London Bombings (7/7)",
+						  description: "Coordinated terrorist attacks on London transit shocked the world.",
+						  quote: `"We were stuck underground for what felt like forever." — Raj, 29, commuter`,
+						  img: "https://www.britannica.com/event/London-bombings-of-2005"
+						}
+					  ],
+					  tech: [
+						{
+						  title: "YouTube is Born",
+						  description: "The world’s biggest video platform launched in 2005.",
+						  quote: `"Just uploaded a cat clip... pretty cool!" — Student, CA`,
+						  img: "https://www.soundandvision.com/content/flashback-2005-youtube-born-0"
+						},
+						{
+						  title: "Google Maps Launches",
+						  description: "Google Maps changed how we find places online.",
+						  quote: `"Zooming into my house like a spy—wild!" — Forum user, 2005`,
+						  img: "https://blog.google/products/maps/look-back-15-years-mapping-world/"
+						}
+					  ],
+					  culture: [
+						{
+						  title: "Kanye Releases *Late Registration*",
+						  description: "A genre-defining album dropped August 2005.",
+						  quote: `"‘Gold Digger’ is inescapable and genius." — Blogger, MySpace`,
+						  img: "https://en.wikipedia.org/wiki/File:Late_registration_cd_cover.jpg"
+						},
+						{
+						  title: "*Brokeback Mountain* Sparks Talk",
+						  description: "Ang Lee’s film reshaped LGBTQ+ cinema visibility.",
+						  quote: `"First time I saw someone like me on screen." — Anonymous diary`,
+						  img: "http://yvettecandraw.blogspot.com/2012/06/its-been-long-time-since-ive-allowed.html"
+						}
+					  ]
+					};
+				
+					function createCards(category) {
+					  const container = document.getElementById(`${category}-container`);
+					  eventsData[category].forEach((event, index) => {
+						const card = document.createElement('div');
+						card.className = 'event-card';
+						const quoteId = `${category}-quote-${index}`;
+						const imgId = `${category}-img-${index}`;
+				
+						card.innerHTML = `
+						  <div class="event-title">${event.title}</div>
+						  <div class="event-description">${event.description}</div>
+						  <div class="quote-box" id="${quoteId}">${event.quote}</div>
+						  <img src="${event.img}" class="event-image" id="${imgId}" alt="${event.title}">
+						`;
+				
+						card.addEventListener('click', () => {
+						  const quoteEl = document.getElementById(quoteId);
+						  const imgEl = document.getElementById(imgId);
+						  const isVisible = quoteEl.style.display === 'block';
+						  quoteEl.style.display = isVisible ? 'none' : 'block';
+						  imgEl.style.display = isVisible ? 'none' : 'block';
+						});
+				
+						container.appendChild(card);
+					  });
+					}
+				
+					// Generate cards on page load
+					['politics', 'tech', 'culture'].forEach(createCards);
+				  </script>
+				  
+			<script>
+				// ---- FLOATING WINDOWS (2005 CHAOS) ----
+				
+				const fakeWindows = [
+				  { title: "💾 Install AOL 9.0 Now!", body: "Blazing fast dial-up speeds. Only 14 hours to download a song!" },
+				  { title: "🔥 You Are The 1,000,000th Visitor!", body: "Claim your free ringtone now! 🎵" },
+				  { title: "📢 Friendster Invite Pending", body: "Your friend 'XxEmoKidxX' is waiting..." },
+				  { title: "🛑 Warning!", body: "Your computer might be infected! Click here for a free scan." }
+				];
+				
+				function spawnFloatingAd() {
+				  const ad = document.createElement('div');
+				  ad.className = 'floating-ad';
+				  
+				  const content = fakeWindows[Math.floor(Math.random() * fakeWindows.length)];
+				  ad.innerHTML = `
+					<div class="ad-title">${content.title}</div>
+					<div class="ad-body">${content.body}</div>
+				  `;
+				  
+				  document.body.appendChild(ad);
+				
+				  // Random position and animation
+				  const startX = Math.random() * window.innerWidth;
+				  const startY = Math.random() * window.innerHeight;
+				  const deltaX = (Math.random() - 0.5) * 1;
+				  const deltaY = (Math.random() - 0.5) * 1;
+				
+				  let x = startX;
+				  let y = startY;
+				
+				  const interval = setInterval(() => {
+					x += deltaX;
+					y += deltaY;
+					ad.style.left = `${x}px`;
+					ad.style.top = `${y}px`;
+				
+					if (x < -200 || x > window.innerWidth + 200 || y < -100 || y > window.innerHeight + 100) {
+					  clearInterval(interval);
+					  ad.remove();
+					}
+				  }, 30);
+				}
+				
+				// Spawn one every few seconds
+				setInterval(spawnFloatingAd, 5000);
+				</script>
+							
+
 		<nav id="links">
 		</nav>
 	</main>
+
+	
 </body>
 </html>
+
