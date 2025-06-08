@@ -1,0 +1,91 @@
+/* Nadia Yasin CSS
+CSS for 1995-2005 Page*/
+
+/* CSS for index.html*/
+
+  .navButton {
+    background: linear-gradient(45deg, #66587a, #49395f);
+    size: 16px;
+    color: #c0f6f6;
+    margin: auto;
+    /*margin-left: 625px;*/
+    padding: 14px 32px;
+    font-size: 14px;
+    border: 2px solid #c0f6f6;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(155, 216, 216, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .navButton:hover {
+    background: linear-gradient(45deg, #9492c0, #7f6f99);
+    color: #1e1b2f;
+    box-shadow: 0 0 20px rgba(208, 245, 245, 0.5);
+    transform: scale(1.05);
+  }
+
+  .nav-button-box {
+  display: flex; 
+  justify-content: center; 
+  align-items: center
+  }
+
+  .titleforpage {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+    color: black;
+  }
+
+  h1 {
+    color: black;
+  }
+
+  p {
+    color: black;
+  }
+
+  #pixalcomputer {
+  display: block;
+  margin: auto;
+  width: 15%;
+  position: center;
+  }
+
+/*
+.parent-container {
+  position: relative; /* Make this the positioning context 
+}
+
+#browser-window {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#input-field {
+  position: absolute;
+  top: 26.6px;
+  left: 27.1%;
+  z-index: 1;
+}
+
+#input-field {
+  width: 63%;
+}
+
+.browser-window-button {
+  position: absolute;
+  z-index: 1;
+  top: 25.5px;
+  left: 92.2%;
+}
+*/
+
+
+

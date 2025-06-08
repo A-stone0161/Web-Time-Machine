@@ -1,0 +1,132 @@
+/* Nadia Yasin CSS
+CSS for 1995-2005 Page*/
+
+/* CSS for index 3 html */
+  .info-box {
+    margin-top: 30px;
+    padding: 20px;
+    background: #ffffff;
+    /* border-radius: 8px; */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  label, select {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+
+
+
+/* Desktop Icons Css */
+  #icon1 {
+    position: absolute;
+    top: 15px;
+    left: 42px;
+  }
+
+  #icon2 {
+    position: absolute;
+    top: 503px;
+    left: 895px;
+  }
+
+  #icon3 {
+    position: absolute;
+    top: 161px;
+    left: 1335px;
+  }
+
+  #icon4 {
+    position: absolute;
+    top: 187px;
+    left: 67px;
+  }
+
+  #icon5 {
+    position: absolute;
+    top: 112px;
+    left: 110px;
+  }
+
+  #icon6 {
+    position: absolute;
+    top: 614px;
+    left: 1393px;
+  }
+
+  #icon7 {
+    position: absolute;
+    top: 248px;
+    left: 149px;
+  }
+
+  #icon8 {
+    position: absolute;
+    top: 319px;
+    left: 1199px;
+  }
+
+  #icon9 {
+    position: absolute;
+    top: 380px;
+    left: 1316px;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 52px;
+    left: 1465px;
+    width: 2%;
+  }
+
+
+
+
+  #title-for-content {
+    margin-top: -37px;
+    color: white;
+  }
+  
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#content {
+  display: block;
+    width: 100%;
+    border: solid #7996dd;
+    border-top-width: 52px;
+    border-bottom-width: 33px;
+    border-right-width: 5px;
+    border-left-width: 5px;
+    background-color: #f0efe2;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+#second-button {
+    /*display: block;*/
+    margin: auto;
+    width: 4%;
+    position: center;
+    padding-left: 566px;
+    padding-top: 200px;
+}
+
+#first-button {
+    display: block;
+    margin: auto;
+    width: 90%;
+    position: center;
+    margin-top: 25%;
+}
+
+#starter-text {
+    text-align: center;
+}
+
+
