@@ -84,6 +84,13 @@ CSS for 1995-2005 Page*/
     width: 2%;
   }
 
+  .close-button2 {
+    position: absolute;
+    top: 43px;
+    left: 978px;
+    width: 1.5%;
+  }
+
 
 
 
@@ -140,3 +147,33 @@ h1 {
   font-family: Tahoma;
 }
 
+#homepage-info {
+  width: 32%;
+  border: solid #7996dd;
+    border-top-width: 29px;
+    border-bottom-width: 20px;
+    border-right-width: 5px;
+    border-left-width: 5px;
+    background-color: #f0efe2;
+  z-index: 3;
+  font-family: tahoma;
+}
+
+.info {
+  margin-top: -25px;
+  color: white;
+  text-shadow: none;
+  font-family: Tahoma;
+}
+
+.info1 {
+  color: black;
+  text-shadow: none;
+  font-family: Tahoma;
+}
+
+.info2 {
+  color: #363636;
+  text-shadow: none;
+  font-family: Tahoma;
+}

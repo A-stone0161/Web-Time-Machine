@@ -103,6 +103,7 @@ function firstButtonClicked() {
     document.getElementById('second-button').style.display = 'inline';
     document.getElementById('starter-text').style.display = 'none';
     document.getElementById('desktop-icons').style.display = 'inline';
+    document.getElementById('homepage-info').style.display = 'inline';
     
 }
 
@@ -111,6 +112,7 @@ var clicked2 = false;
 function contentButtonClicked() {
     clicked2 = true;
     document.getElementById('content').style.display = 'block';
+     document.getElementById('homepage-info').style.display = 'none';
 
     // Re-show the close button
     const closeButton = document.querySelector('.close-button');
@@ -127,6 +129,13 @@ function closeWindowButtonClicked() {
     clicked3 = true;
     document.getElementById('content').style.display = 'none';
     document.getElementById('second-button').style.display = 'inline';
+}
+
+var clicked4 = false;
+
+function closeInfoButtonClicked() {
+    clicked4 = true;
+    document.getElementById('homepage-info').style.display = 'none';
 }
 
 
