@@ -103,6 +103,7 @@ CSS for 1995-2005 Page*/
   
 
 body {
+  background: #5b79c4;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -121,30 +122,43 @@ body {
 }
 
 #second-button {
-    /*display: block;*/
-    margin: auto;
     width: 4%;
     position: absolute;
-    padding-left: 566px;
-    padding-top: 200px;
+    left: 955px;
+    top: 337px;
 }
 
 #first-button {
     display: block;
     margin: auto;
-    width: 90%;
+    width: 34%;
     position: center;
-    margin-top: 25%;
+    margin-top: 2%;
+    margin-bottom: 12.6%;
 }
 
 #starter-text {
     text-align: center;
+    margin-top: 90px;
 }
 
 h1 {
   color: black;
   text-shadow: none;
   font-family: Tahoma;
+}
+
+h2 {
+  color: black;
+  text-shadow: none;
+  font-family: Tahoma;
+}
+
+h3 {
+  color: black;
+  text-shadow: none;
+  font-family: Tahoma;
+  margin-bottom: 20px;
 }
 
 #homepage-info {
@@ -177,3 +191,29 @@ h1 {
   text-shadow: none;
   font-family: Tahoma;
 }
+
+#computer-screen {
+  border: 10px solid #d3d2ce;
+  background: white;
+}
+
+#opening-computer {
+  background: #5b79c4;
+  width: 100%;
+}
+
+#technology {
+  color: #072960;
+  text-shadow: none;
+}
+
+#pop-culture {
+  color: #072960;
+  text-shadow: none;
+}
+
+#news {
+  color: #072960;
+  text-shadow: none;
+}
+

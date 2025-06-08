@@ -104,6 +104,8 @@ function firstButtonClicked() {
     document.getElementById('starter-text').style.display = 'none';
     document.getElementById('desktop-icons').style.display = 'inline';
     document.getElementById('homepage-info').style.display = 'inline';
+    document.getElementById('opening-computer').style.display = 'none';
+    document.getElementById('computer-screen').style.display = 'none';
     
 }
 
