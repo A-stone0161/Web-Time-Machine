@@ -53,21 +53,21 @@
     ],
     culture: [
       {
-        title: "Drake's 'Hotline Bling'",
-        description: "The music video sparked a massive meme craze.",
-        quote: `"Ever since I left the city, you..." — Everyone on Vine`,
+        title: "The Simpsons Premiere - 1989",
+        description: "The first episode of the influential comedy aires on FOX.",
+        quote: `"D’oh!" -Homer Simpson`,
         img: "https://upload.wikimedia.org/wikipedia/en/8/82/Drake_-_Hotline_Bling.png"
       },
       {
-        title: "Zayn Malik Leaves One Direction",
-        description: "Pop music shock as Zayn announces departure.",
-        quote: `"I want to be a normal 22-year-old." — Zayn Malik`,
+        title: "Michael Jackson’s Super Bowl Halftime Show - 1993",
+        description: "One of the most watched shows of all time which influenced future artists and their superbowl performances.",
+        quote: `"I'm starting with the man in the mirror..." -Michael Jackson`,
         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Zayn_Malik_2015.jpg/640px-Zayn_Malik_2015.jpg"
       },
       {
-        title: "'Empire' Dominates TV",
-        description: "The show breaks ratings records and becomes a cultural phenomenon.",
-        quote: `"You want Cookie? You can’t handle Cookie." — Cookie Lyon`,
+        title: "Release of Jurassic Park - 1993",
+        description: "The release of this thriller paved the way for effects, CGI and animatronics for future productions.",
+        quote: `"Your scientists were so preoccupied with whether or not they could, they didn’t stop to think if they should." -Dr. Ian Malcolm (Jeff Goldblum)`,
         img: "https://upload.wikimedia.org/wikipedia/en/6/67/Empire_season_1_poster.jpg"
       }
     ]
