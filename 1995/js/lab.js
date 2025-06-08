@@ -113,7 +113,7 @@ function contentButtonClicked() {
     // document.getElementById('desktop-icons').style.display = 'none';
     document.getElementById('content').style.display = 'block';
     console.log("Content display:", document.getElementById('content').style.display);
-    document.getElementById('content').style.backgroundColor = 'yellow';
+    // document.getElementById('content').style.backgroundColor = 'yellow';
 }
 
 

@@ -6,7 +6,7 @@ CSS for 1995-2005 Page*/
     margin-top: 30px;
     padding: 20px;
     background: #ffffff;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   }
 
@@ -16,36 +16,8 @@ CSS for 1995-2005 Page*/
     font-size: 18px;
   }
 
-  /* .row {
-  display: flex;
-  }
 
-  .row2 {
-    display: flex;
-  }
 
-  .row3 {
-    display: flex;
-  }
-
-  /* Create three equal columns that sits next to each other */
-  /* .column {
-    display: flex;
-    flex: 33.33%;
-    padding: 45px;
-  }
-
-  .column3 {
-    display: flex;
-    flex: 33.33%;
-    padding: 45px;
-  }
-
-  #sorting-images {
-  display: flex; 
-  justify-content: space-around;
-  width: 100%;
-  } */ 
 
 /* Desktop Icons Css */
   #icon1 {
@@ -56,8 +28,8 @@ CSS for 1995-2005 Page*/
 
   #icon2 {
     position: absolute;
-    top: 640px;
-    left: 1468px;
+    top: 503px;
+    left: 895px;
   }
 
   #icon3 {
@@ -80,7 +52,7 @@ CSS for 1995-2005 Page*/
 
   #icon6 {
     position: absolute;
-    top: 637px;
+    top: 614px;
     left: 1393px;
   }
 
@@ -102,12 +74,20 @@ CSS for 1995-2005 Page*/
     left: 1316px;
   }
 
+  .close-button {
+    position: absolute;
+    top: 52px;
+    left: 1465px;
+    width: 2%;
+  }
 
-  /* body {
-  background-image: url(../img/HD-Windows-XP-Wallpaper-Backgrounds.jpg);
-  background-size: cover;
-  } */
 
+
+
+  #title-for-content {
+    margin-top: -37px;
+    color: white;
+  }
   
 
 body {
@@ -118,9 +98,14 @@ body {
 #content {
   display: block;
     width: 100%;
-    border: 2px solid red;
-    background-color: yellow;
+    border: solid #7996dd;
+    border-top-width: 52px;
+    border-bottom-width: 33px;
+    border-right-width: 5px;
+    border-left-width: 5px;
+    background-color: #f0efe2;
     z-index: 2;
+    border-radius: 10px;
 }
 
 #second-button {
@@ -131,8 +116,6 @@ body {
     padding-left: 566px;
     padding-top: 200px;
 }
-
-
 
 #first-button {
     display: block;

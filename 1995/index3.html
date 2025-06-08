@@ -55,16 +55,18 @@ HTML for 1995-2005 Page-->
     </div>
 
     <div id="content" style="display: none;">
-        <p>im here</p>
+        <p id="title-for-content">📂 Documents</p>
+
+        <img class="close-button" src="./img/closeprogrambutton.png">
     
 
         
-        <h1>Year in Review (1995 - 2005)</h1>
+        <h1>A Review of the Years 1995 - 2005!</h1>
 
         <label for="year-select">Choose a year:</label>
         <select id="year-select">
-            <option value="">--Select a year--</option>
-            <!-- Generate year options from 1995 to 2005 -->
+            <option value="">Select a year</option>
+            <!-- Generate year drop downs from 1995 to 2005 -->
             <script>
                 document.addEventListener("DOMContentLoaded", () => {
                 const select = document.getElementById("year-select");
