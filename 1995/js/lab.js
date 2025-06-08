@@ -110,12 +110,24 @@ var clicked2 = false;
 
 function contentButtonClicked() {
     clicked2 = true;
-    // document.getElementById('desktop-icons').style.display = 'none';
     document.getElementById('content').style.display = 'block';
+
+    // Re-show the close button
+    const closeButton = document.querySelector('.close-button');
+    if (closeButton) {
+        closeButton.style.display = 'inline'; 
+    }
+
     console.log("Content display:", document.getElementById('content').style.display);
-    // document.getElementById('content').style.backgroundColor = 'yellow';
 }
 
+var clicked3 = false;
+
+function closeWindowButtonClicked() {
+    clicked3 = true;
+    document.getElementById('content').style.display = 'none';
+    document.getElementById('second-button').style.display = 'inline';
+}
 
 
 

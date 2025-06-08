@@ -37,13 +37,15 @@ HTML for 1995-2005 Page-->
     <!-- <img id="second-button" src="./img/mycomputericontrans.webp" style="display: none;" onclick="document.getElementById('content').style.display='block'; 
     this.style.display='none'; contentButtonClicked(); document.getElementById('show-content').style.backgroundColor = 'yellow';"> -->
 
-    <img id="second-button" src="./img/mycomputericontrans.webp" style="display: none;" onclick="this.style.display='none'; contentButtonClicked();">
+    <img id="second-button" src="./img/mycomputericontrans.webp" style="display: none;" onclick="contentButtonClicked();">
 
 
     <div id="desktop-icons" style="display: none;">
         <div class="icons"> 
             <img id="icon1" src="img/recyleicon.png" alt="recyleicon" style="width: 3.5%">
-            <img id="icon2" src="img/powerbuttonicon.png" alt="powerbuttonicon" style="width:3.5%">
+            <a href="../1995/index.html">
+                <img id="icon2" src="img/powerbuttonicon.png" alt="powerbuttonicon" style="width:3.5%">
+            </a>
             <img id="icon3" src="img/solitareicon.png" alt="solitareicon" style="width:4.5%">
             <img id="icon4" src="img/zipfileiconpng.png" alt="zipfileicon" style="width:3.5%">
             <img id="icon5" src="img/folderdestoptrans.png" alt="filmfoldericon" style="width:3.5%">
@@ -57,7 +59,7 @@ HTML for 1995-2005 Page-->
     <div id="content" style="display: none;">
         <p id="title-for-content">📂 Documents</p>
 
-        <img class="close-button" src="./img/closeprogrambutton.png">
+        <img class="close-button" src="./img/closeprogrambutton.png" onclick="this.style.display='none'; closeWindowButtonClicked();">
     
 
         

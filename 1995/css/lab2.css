@@ -13,7 +13,10 @@ CSS for 1995-2005 Page*/
   label, select {
     display: block;
     margin: 10px 0;
-    font-size: 18px;
+    font-size: 21px;
+    color: #363636;
+    text-shadow: none;
+    font-family: tahoma;
   }
 
 
@@ -87,6 +90,8 @@ CSS for 1995-2005 Page*/
   #title-for-content {
     margin-top: -37px;
     color: white;
+    text-shadow: none;
+    font-family: Tahoma;
   }
   
 
@@ -112,7 +117,7 @@ body {
     /*display: block;*/
     margin: auto;
     width: 4%;
-    position: center;
+    position: absolute;
     padding-left: 566px;
     padding-top: 200px;
 }
@@ -129,4 +134,9 @@ body {
     text-align: center;
 }
 
+h1 {
+  color: black;
+  text-shadow: none;
+  font-family: Tahoma;
+}
 
