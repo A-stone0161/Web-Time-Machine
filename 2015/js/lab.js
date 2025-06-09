@@ -15,7 +15,7 @@
       {
         title: "▷Same-Sex Marriage Legalized in the U.S.",
         description: "The U.S. Supreme Court legalized same-sex marriage nationwide.",
-        quote: `"Love won." — Social media hashtag #LoveWins`,
+        quote: `"LETS GO GAYS." — #LoveWins`,
         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/SCOTUS_Marriage_Equality_Decision_-_Celebration.jpg/640px-SCOTUS_Marriage_Equality_Decision_-_Celebration.jpg"
       },
       {

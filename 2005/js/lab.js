@@ -1,6 +1,6 @@
 // index.js - purpose and description here
 // Author: Emily Valdez
-// Date:
+// Date: 6/7/25
 
 const allSections = ['politics', 'tech', 'culture'];
 				
@@ -16,13 +16,13 @@ const allSections = ['politics', 'tech', 'culture'];
 						  title: "Hurricane Katrina",
 						  description: "Hurricane Katrina devastated New Orleans, displacing hundreds of thousands.",
 						  quote: `"We’ve been stuck in Houston for days now... I miss home." — Anonymous evacuee`,
-						  img: "https://www.britannica.com/event/Hurricane-Katrina"
+						  img: "img/Hurricane-Katrina.webp"
 						},
 						{
 						  title: "London Bombings (7/7)",
 						  description: "Coordinated terrorist attacks on London transit shocked the world.",
 						  quote: `"We were stuck underground for what felt like forever." — Raj, 29, commuter`,
-						  img: "https://www.britannica.com/event/London-bombings-of-2005"
+						  img: "img/London Bombing.webp"
 						}
 					  ],
 					  tech: [
@@ -30,13 +30,13 @@ const allSections = ['politics', 'tech', 'culture'];
 						  title: "YouTube is Born",
 						  description: "The world’s biggest video platform launched in 2005.",
 						  quote: `"Just uploaded a cat clip... pretty cool!" — Student, CA`,
-						  img: "https://www.soundandvision.com/content/flashback-2005-youtube-born-0"
+						  img: "img/Youtube.jpg"
 						},
 						{
 						  title: "Google Maps Launches",
 						  description: "Google Maps changed how we find places online.",
 						  quote: `"Zooming into my house like a spy—wild!" — Forum user, 2005`,
-						  img: "https://blog.google/products/maps/look-back-15-years-mapping-world/"
+						  img: "img/googlemap.webp"
 						}
 					  ],
 					  culture: [
@@ -44,13 +44,13 @@ const allSections = ['politics', 'tech', 'culture'];
 						  title: "Kanye Releases *Late Registration*",
 						  description: "A genre-defining album dropped August 2005.",
 						  quote: `"‘Gold Digger’ is inescapable and genius." — Blogger, MySpace`,
-						  img: "https://en.wikipedia.org/wiki/File:Late_registration_cd_cover.jpg"
+						  img: "img/kanye.jpg"
 						},
 						{
 						  title: "*Brokeback Mountain* Sparks Talk",
 						  description: "Ang Lee’s film reshaped LGBTQ+ cinema visibility.",
 						  quote: `"First time I saw someone like me on screen." — Anonymous diary`,
-						  img: "http://yvettecandraw.blogspot.com/2012/06/its-been-long-time-since-ive-allowed.html"
+						  img: "img/brokebackmountain.jpg"
 						}
 					  ]
 					};
@@ -82,6 +82,5 @@ const allSections = ['politics', 'tech', 'culture'];
 					  });
 					}
 				
-					// Generate cards on page load
 					['politics', 'tech', 'culture'].forEach(createCards);
 			

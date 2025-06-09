@@ -1,82 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Web Time Machine</title>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="css/site.css">
-	<link rel="stylesheet" type="text/css" href="css/homepage.css">
-	<script type="text/javascript" src="./js/lab.js" defer></script>
-	 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Time Machine</title>
+  <link rel="stylesheet" href="css/site.css" />
+  <link rel="stylesheet" href="css/homepage.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    .cutscene {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(ellipse at center, #000000 0%, #222222 100%);
+      color: #00ffcc;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      flex-direction: column;
+      animation: fadeIn 0.5s ease-in;
+    }
+
+    .time-portal p {
+      animation: pulse 1s infinite;
+      font-family: monospace;
+      text-align: center;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.2; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.05); }
+      100% { opacity: 0.2; transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-		<div id="intro" class="intro-screen">
-		  <p id="introText" class="typing-text"></p>
-		</div>
-		<script>
-			const story = "Time didn’t slow down. It didn’t shatter. It stopped. Completely.\nYou now stand outside the river of time.\nStep carefully. The past will tempt you. The future will test you.\nBut remember—time only stopped because you touched it.";
-			const textElement = document.getElementById("introText");
-			let i = 0;
-		  
-			function typeStory() {
-			  if (i < story.length) {
-				textElement.innerHTML += story.charAt(i) === '\n' ? "<br>" : story.charAt(i);
-				i++;
-				setTimeout(typeStory, 45);
-			  } else {
-				setTimeout(() => {
-				  document.getElementById("intro").style.display = "none";
-				  document.getElementById("cutscene").style.display = "flex";
-		  
-				  setTimeout(() => {
-					document.getElementById("cutscene").style.display = "none";
-					showMainContent();
-				  }, 3000);
-				}, 1000);
-			  }
-			}
-		  
-			function showMainContent() {
-			  document.querySelector(".title").style.display = "block";
-			  document.querySelector(".felx-container").style.display = "block";
-			}
-		  
-			document.addEventListener("DOMContentLoaded", () => {
-			  const hasSeenIntro = sessionStorage.getItem("hasSeenIntro");
-		  
-			  if (!hasSeenIntro) {
-				// First time visiting — play intro
-				sessionStorage.setItem("hasSeenIntro", "true");
-				document.querySelector(".title").style.display = "none";
-				document.querySelector(".felx-container").style.display = "none";
-				typeStory();
-			  } else {
-				// Skip intro
-				document.getElementById("intro").style.display = "none";
-				document.getElementById("cutscene").style.display = "none";
-				showMainContent();
-			  }
-			});
-		  </script>		  
-		  
-		<div id="cutscene" class="cutscene" style="display: none;">
-		  <div class="time-portal">
-			<p>Initiating Time Travel...</p>
-		  </div>
-		</div>
-	  
-	<div class = "title">
-		<h1>Welcome to the Web Time Machine</h1>
-	</div>
 
-	<div class = "center-wrapper">
-		<div id = text><h3><p> We've designed this site to take you back (and forward) in time. We collected what we found to be the noteable moments of each decade when it comes to economics, pop-culture and news. Click through and explore the highlights and lowlights of each decade. </p></h3></div>
+  <!-- Audio -->
+  <audio id="typeSound" src="sounds/typewriter.mp3" preload="auto"></audio>
+  <audio id="chimeSound" src="sounds/chime.mp3" preload="auto"></audio>
+  <audio id="whooshSound" src="sounds/whoosh.mp3" preload="auto"></audio>
 
-		<h2><p>Click on a decade to see what the world was like back then!</p></h2>
+  <!-- Intro Typing -->
+  <div id="intro" class="intro-screen">
+    <p id="introText" class="typing-text"></p>
+  </div>
 
-<div class ="center-wrapper">
-  <div class="button-panel">
-	<button id="navButtonZero" class="navButton">1935</button>
+  <!-- Cutscene -->
+  <div id="cutscene" class="cutscene" style="display: none;">
+    <div class="time-portal">
+      <p>Initiating Time Travel...</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="title">
+    <h1>Welcome to the Web Time Machine</h1>
+  </div>
+
+  <div class="flex-container">
+    <div id="text">
+      <h3>
+        <p>We've designed this site to take you back (and forward) in time. We collected what we found to be the noteable moments of each decade when it comes to economics, pop-culture and news. Click through and explore the highlights and lowlights of each decade.</p>
+      </h3>
+    </div>
+
+    <h2><p>Click on a decade to see what the world was like back then!</p></h2>
+
     <button id="navButtonOne" class="navButton">1975</button>
     <button id="navButtonTwo" class="navButton">1985</button>
     <button id="navButtonThree" class="navButton">1995</button>
@@ -84,66 +84,81 @@
     <button id="navButtonFive" class="navButton">2015</button>
     <button id="navButtonSix" class="navButton">2025</button>
     <button id="navButtonSeven" class="navButton">2065</button>
-	<p>Booting up time travel... </p>
   </div>
-</div>
 
-	
-				
-	<script>
-		$(document).ready(function () {
-	  		$('#navButtonZero').click(function () {
-	   			 window.location.href = '1935/index.html';
-	  		});
-		});
-    	$(document).ready(function () {
-      		$('#navButtonOne').click(function () {
-       			 window.location.href = '1975/index.html';
-      		});
-    	});
-		$(document).ready(function () {
-	  		$('#navButtonTwo').click(function () {
-	   			 window.location.href = '1985/index.html';
-	  		});
-		});
-		$(document).ready(function () {
-	  		$('#navButtonThree').click(function () {
-	   			 window.location.href = '1995/index.html';
-	  		});
-		});
-		$(document).ready(function () {
-	  		$('#navButtonFour').click(function () {
-	   			 window.location.href = '2005/index.html';
-	  		});
-		});
-		$(document).ready(function () {
-	  		$('#navButtonFive').click(function () {
-	   			 window.location.href = '2015/index.html';
-	  		});
-		});
-		$(document).ready(function () {
-	  		$('#navButtonSix').click(function () {
-	   			 window.location.href = '2025/index.html';
-	  		});
-		});
-		$(document).ready(function () {
-	  		$('#navButtonSeven').click(function () {
-	   			 window.location.href = '2065/index.html';
-	  		});
-		});
+  <!-- Robot (Optional) -->
+  <div id="robot-helper" style="display: none;">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="Chatbot Robot" id="robot-img" />
+    <div id="speech-bubble" style="display: none;"></div>
+  </div>
 
-	</script>
-	
-	  <div id="robot-helper" style="display: none;">
-		<img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="Chatbot Robot" id="robot-img" />
-		<div id="speech-bubble" style="display: none;"></div>
-	  </div>
-	  
-	  
-		</section>
-		<nav id="links">
-			
-		</nav>
-	</main>
+  <!-- JS -->
+  <script>
+    const story = "Time didn’t slow down. It didn’t shatter. It stopped. Completely.\nYou now stand outside the river of time.\nStep carefully. The past will tempt you. The future will test you.\nBut remember—time only stopped because you touched it.";
+    const textElement = document.getElementById("introText");
+    const typeSound = document.getElementById("typeSound");
+    const chimeSound = document.getElementById("chimeSound");
+    const whooshSound = document.getElementById("whooshSound");
+    let i = 0;
+
+    function typeStory() {
+      if (i < story.length) {
+        if (story.charAt(i) !== "\n") {
+          typeSound.currentTime = 0;
+          typeSound.play().catch(e => {});
+        }
+        textElement.innerHTML += story.charAt(i) === "\n" ? "<br>" : story.charAt(i);
+        i++;
+        setTimeout(typeStory, 45);
+      } else {
+        setTimeout(() => {
+          chimeSound.play().catch(e => {});
+          document.getElementById("intro").style.display = "none";
+          document.getElementById("cutscene").style.display = "flex";
+          whooshSound.play().catch(e => {});
+          setTimeout(() => {
+            document.getElementById("cutscene").style.display = "none";
+            showMainContent();
+          }, 3000);
+        }, 1000);
+      }
+    }
+
+    function showMainContent() {
+      document.querySelector(".title").style.display = "block";
+      document.querySelector(".flex-container").style.display = "block";
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const hasSeenIntro = sessionStorage.getItem("hasSeenIntro");
+
+      if (!hasSeenIntro) {
+        sessionStorage.setItem("hasSeenIntro", "true");
+        document.querySelector(".title").style.display = "none";
+        document.querySelector(".flex-container").style.display = "none";
+        textElement.innerHTML = "Click anywhere to begin your journey...";
+        document.body.addEventListener("click", () => {
+          textElement.innerHTML = "";
+          typeStory();
+        }, { once: true });
+      } else {
+        document.getElementById("intro").style.display = "none";
+        document.getElementById("cutscene").style.display = "none";
+        showMainContent();
+      }
+    });
+
+    // Button navigation
+    $(document).ready(function () {
+      $('#navButtonOne').click(() => window.location.href = '1975/index.html');
+      $('#navButtonTwo').click(() => window.location.href = '1985/index.html');
+      $('#navButtonThree').click(() => window.location.href = '1995/index.html');
+      $('#navButtonFour').click(() => window.location.href = '2005/index.html');
+      $('#navButtonFive').click(() => window.location.href = '2015/index.html');
+      $('#navButtonSix').click(() => window.location.href = '2025/index.html');
+      $('#navButtonSeven').click(() => window.location.href = '2065/index.html');
+    });
+  </script>
+
 </body>
 </html>
