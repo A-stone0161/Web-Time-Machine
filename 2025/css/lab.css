@@ -1,16 +1,21 @@
 
 body {
-  background-color: #2c3127;
+  background-image: url(https://images4.alphacoders.com/134/1349546.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: contain;
+  background-color: rgb(147, 223, 255);
   margin: 0;
   padding: 0;
   font-family: 'Candara';
   color: #ffffff;
+  text-shadow: 0 0 2px #3a6885;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  text-shadow: 0 0 2px #ffffff;
 }
 
 .container {
@@ -32,11 +37,10 @@ h1, h2, h3 {
 }
 
 .column {
-  flex: 33.33%;
+  flex: 10;
   padding: 5px;
 }
-  .special {
-    background-color: #d7ffc3;
+.special {
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-shadow: 0 0 2px #000000;

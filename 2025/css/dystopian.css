@@ -1,0 +1,15 @@
+
+body {
+ background-image: url("../img/evil.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: contain;
+  background-color: rgb(37, 2, 2);
+  
+}
+h1, h2, h3 {
+  color: #ffffff;
+  text-shadow: 0 0 1px #ffffff, 0 0 3px #f5ffff;
+  margin-bottom: 20px;
+}
