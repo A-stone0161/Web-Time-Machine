@@ -14,8 +14,7 @@ body {
   }
   
   h2 {
-    color: #19212b;
-    border-bottom: 2px solid #eee;
+    color: #1976d2;
     text-align: center;
     padding-bottom: 5px;
     margin-bottom: 20px;
@@ -31,7 +30,6 @@ body {
   
   .folder {
     background: #ffffff;
-    border: 1px solid #ccc;
     padding: 15px 25px;
     border-radius: 12px;
     font-weight: 500;
