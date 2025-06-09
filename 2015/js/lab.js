@@ -1,4 +1,4 @@
-// index.js - purpose and description here
+// index.js - 2015 web time machine
 // Author: Sophia McClanahan
 // Date: 6/9/2025
 
