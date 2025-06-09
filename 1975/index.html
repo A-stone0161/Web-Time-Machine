@@ -10,53 +10,52 @@
 </head>
 <body>
 
-  <header>
-<button id="homeButton" class="navButton" onclick="location.href='../index.html'">
-  <h2>Return to the Time Machine</h2>
-  </header>
+  <h1>Welcome to the decade of 1975-1985!</h1>
+  <p>Explore an era of activism, globalization and some pretty unfortunate hair-dos.</p>
 
-  <h1>Welcome to the Retro Zone</h1>
 
-  <div class="container main-content">
-    <!-- YouTube Video -->
-    <div class="section">
-      <h2> Featured Video</h2>
-      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+  <div>
+    <button class="navButton" onclick="showTab('politics')">Politics</button>
+    <button class="navButton" onclick="showTab('technology')">Technology</button>
+    <button class="navButton" onclick="showTab('popCulture')">Pop Culture</button>
+  </div>
+
+  <div class="container">
+    <div id="politics" class="tabContent active">
+      <h2>Politics</h2>
+      <div class="media-section">
+        <img src="https://via.placeholder.com/600x300?text=Politics+Image" alt="Politics Image">
+        <video controls src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+        <p class="description">Stay informed with the latest in global politics. From policy changes to international relations, this section dives into key developments shaping our world.</p>
+      </div>
     </div>
 
-    <!-- Text Column -->
-    <div class="section">
-      <h2> Retro Thoughts</h2>
-      <p>
-        Welcome to the synthwave experience. Here we celebrate neon lights, nostalgic pixels, and the magic of 80s-inspired design.
-        This page is just the beginning—stay tuned for interactive art, classic beats, and more vibes from the future past.
-      </p>
+    <div id="technology" class="tabContent">
+      <h2>Technology</h2>
+      <div class="media-section">
+        <img src="https://via.placeholder.com/600x300?text=Technology+Image" alt="Technology Image">
+        <video controls src="https://www.w3schools.com/html/movie.mp4"></video>
+        <p class="description"> During this decade, in the aftermath of the Space Race, came a new period of global cooperation when it came to exploring the new frontier beyond our planet. The rampant public interest in space was at an all-time high, funding was flowing and advancements were being made with an unseen rapidity. Between the launches of multiple space stations and the first deep space probes, the 1970's and 80's brought humans closer to the stars than ever before.</p>
+
+        <p>Thanks to NASA, we can see the effect this era of space exploration has had on the field. Take a look at some of the images that never would have been taken if it weren't for an era of enthusiasm surrounding space.</p>
+
+        <button id="button">See the Stars</button>
+         <div id="output"></div>
+      </div>
     </div>
 
-    <!-- Interactive Graphic Area -->
-    <div class="section">
-      <h2> Interactive Zone</h2>
-      <div id="graphicArea">Interactive Graphic Loading...</div>
+    <div id="popCulture" class="tabContent">
+      <h2>Pop Culture</h2>
+      <div class="media-section">
+        <img src="https://via.placeholder.com/600x300?text=Pop+Culture+Image" alt="Pop Culture Image">
+        <video controls src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+        <p class="description">Dive into the world of music, movies, and trends. Pop culture shapes our social experience—keep up with what’s hot and what’s next.</p>
+
+
+      </div>
     </div>
   </div>
 
-  <script>
-    // Example animated pixels
-    const graphic = document.getElementById('graphicArea');
-
-    function createPixel() {
-      const pixel = document.createElement('div');
-      pixel.classList.add('pixel');
-      pixel.style.left = Math.random() * graphic.clientWidth + 'px';
-      pixel.style.top = Math.random() * graphic.clientHeight + 'px';
-      graphic.appendChild(pixel);
-
-      setTimeout(() => {
-        pixel.remove();
-      }, 1000);
-    }
-
-    setInterval(createPixel, 100);
-  </script>
+  
 </body>
 </html>
