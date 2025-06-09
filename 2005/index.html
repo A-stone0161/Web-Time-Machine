@@ -11,12 +11,88 @@
 <body>
 			<h1>2005</h1>
 			<a href="../index.html">
-				<div class="navigation">
+				<div class="navigation">  
 					<h2>Return to the Time Machine</h2></a>
 				</div>
-		
+				
+				</head>
+				<body>
+				
+				 
+					<div class="page-container">
+					<h1>2005 Time Capsule</h1>
+				  
+				  <div class="folder-bar">
+					<div class="folder" onclick="showCategory('politics')">📁 Political / Global</div>
+					<div class="folder" onclick="showCategory('tech')">📁 Tech Stuff</div>
+					<div class="folder" onclick="showCategory('culture')">📁 Pop Culture</div>
+				  </div>
+				
+				  <div class="event-section" id="politics">
+					<h2>Political & Global Events</h2>
+					<div class="event-container" id="politics-container"></div>
+				  </div>
+				
+				  <div class="event-section" id="tech">
+					<h2>Tech Innovations</h2>
+					<div class="event-container" id="tech-container"></div>
+				  </div>
+				
+				  <div class="event-section" id="culture">
+					<h2>Pop Culture Moments</h2>
+					<div class="event-container" id="culture-container"></div>
+				  </div>
+				  
+			<script>
+				const fakeWindows = [
+				  { title: "💾 Install AOL 9.0 Now!", body: "Blazing fast dial-up speeds. Only 14 hours to download a song!" },
+				  { title: "🔥 You Are The 1,000,000th Visitor!", body: "Claim your free ringtone now! 🎵" },
+				  { title: "📢 Friendster Invite Pending", body: "Your friend 'XxEmoKidxX' is waiting..." },
+				  { title: "🛑 Warning!", body: "Your computer might be infected! Click here for a free scan." }
+				];
+				
+				function spawnFloatingAd() {
+				  const ad = document.createElement('div');
+				  ad.className = 'floating-ad';
+				  
+				  const content = fakeWindows[Math.floor(Math.random() * fakeWindows.length)];
+				  ad.innerHTML = `
+					<div class="ad-title">${content.title}</div>
+					<div class="ad-body">${content.body}</div>
+				  `;
+				  
+				  document.body.appendChild(ad);
+				
+				  const startX = Math.random() * window.innerWidth;
+				  const startY = Math.random() * window.innerHeight;
+				  const deltaX = (Math.random() - 0.5) * 1;
+				  const deltaY = (Math.random() - 0.5) * 1;
+				
+				  let x = startX;
+				  let y = startY;
+				
+				  const interval = setInterval(() => {
+					x += deltaX;
+					y += deltaY;
+					ad.style.left = `${x}px`;
+					ad.style.top = `${y}px`;
+				
+					if (x < -200 || x > window.innerWidth + 200 || y < -100 || y > window.innerHeight + 100) {
+					  clearInterval(interval);
+					  ad.remove();
+					}
+				  }, 30);
+				}
+				
+				setInterval(spawnFloatingAd, 5000);
+				</script>
+							
+
 		<nav id="links">
 		</nav>
 	</main>
+
+	
 </body>
 </html>
+
