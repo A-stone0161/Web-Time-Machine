@@ -56,11 +56,6 @@ $(document).ready(function() {
             news: "Facebook was founded.",
             tech: "Gmail was introduced by Google."
         },
-        2005: {
-            pop: "YouTube was founded.",
-            news: "Hurricane Katrina devastated New Orleans.",
-            tech: "Xbox 360 released; Google Maps launched."
-        }
     };
 
     $('#year-select').on('change', function() {

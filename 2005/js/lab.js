@@ -1,6 +1,6 @@
 // index.js - purpose and description here
 // Author: Emily Valdez
-// Date:
+// Date: 6/7/25
 
 const allSections = ['politics', 'tech', 'culture'];
 				
@@ -82,6 +82,5 @@ const allSections = ['politics', 'tech', 'culture'];
 					  });
 					}
 				
-					// Generate cards on page load
 					['politics', 'tech', 'culture'].forEach(createCards);
 			
