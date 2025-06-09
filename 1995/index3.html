@@ -25,25 +25,40 @@ HTML for 1995-2005 Page-->
     </script>
 
     <div id="opening-computer">
+        <div id="computer-screen">
+            <h2 id="starter-text">Oops, almost forgot! </br> You'll have to hit the start button first! </h2>
+        </br>
 
-        <h2 id="starter-text">Oops, almost forgot! </br> You'll have to hit the start button first! </h2>
-
-        <!-- Got help from Wesbot to create buttons that changes the images on the site -->
-        <!-- Clickable image button that changes the backgroundof the site -->
-        <img id="first-button" src="./img/windows-start-button-trans.png" onclick="changeBackgroundImage(this); firstButtonClicked();">
-        
+            <!-- Got help from Wesbot to create buttons that changes the images on the site -->
+            <!-- Clickable image button that changes the backgroundof the site -->
+            <img id="first-button" src="./img/windows-start-button-trans.png" onclick="changeBackgroundImage(this); firstButtonClicked();">
+        </div> 
     </div>
 
     <!-- <img id="second-button" src="./img/mycomputericontrans.webp" style="display: none;" onclick="document.getElementById('content').style.display='block'; 
     this.style.display='none'; contentButtonClicked(); document.getElementById('show-content').style.backgroundColor = 'yellow';"> -->
 
-    <img id="second-button" src="./img/mycomputericontrans.webp" style="display: none;" onclick="this.style.display='none'; contentButtonClicked();">
+    <img id="second-button" src="./img/mycomputericontrans.webp" style="display: none;" onclick="contentButtonClicked();">
 
+    <div id="homepage-info" style="display: none;">
+        <p class="info">💾Info</p>
+        <h2 class="info1"> During 1995, Windows technology was new and exciting, many people had no idea how to use it!</h2>
+        <p class="info2"> We decied to store the files for the decades notable moments here, where they can live forever! 
+            Below you'll find many desktop icons, we are only interested in one though. See if you can figure out which! Heads up, the 
+            power button will send you out of the experience. </p>
+
+            <img class="close-button2" src="./img/closeprogrambutton.png" onclick="this.style.display='none'; closeInfoButtonClicked();">
+
+    </div>
+
+    
 
     <div id="desktop-icons" style="display: none;">
         <div class="icons"> 
             <img id="icon1" src="img/recyleicon.png" alt="recyleicon" style="width: 3.5%">
-            <img id="icon2" src="img/powerbuttonicon.png" alt="powerbuttonicon" style="width:3.5%">
+            <a href="../1995/index.html">
+                <img id="icon2" src="img/powerbuttonicon.png" alt="powerbuttonicon" style="width:3.5%">
+            </a>
             <img id="icon3" src="img/solitareicon.png" alt="solitareicon" style="width:4.5%">
             <img id="icon4" src="img/zipfileiconpng.png" alt="zipfileicon" style="width:3.5%">
             <img id="icon5" src="img/folderdestoptrans.png" alt="filmfoldericon" style="width:3.5%">
@@ -57,7 +72,7 @@ HTML for 1995-2005 Page-->
     <div id="content" style="display: none;">
         <p id="title-for-content">📂 Documents</p>
 
-        <img class="close-button" src="./img/closeprogrambutton.png">
+        <img class="close-button" src="./img/closeprogrambutton.png" onclick="this.style.display='none'; closeWindowButtonClicked();">
     
 
         
@@ -83,13 +98,13 @@ HTML for 1995-2005 Page-->
         <div id="year-info" class="info-box">
             <h2 id="info-year"></h2>
 
-            <h3>Major News</h3>
+            <h3>Political & Global Events</h3>
             <p id="news"></p>
 
-            <h3>Technology</h3>
+            <h3>Tech Innovations</h3>
             <p id="technology"></p>
 
-            <h3>Pop Culture</h3>
+            <h3>Pop Culture Moments</h3>
             <p id="pop-culture"></p>
         </div>
     </div>

@@ -7,17 +7,43 @@
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-			<h1>1985</h1>
+	<main>
+		<div id="content">
+			<h1>1985 - 1995, Click on a box for more info!</h1>
 			<a href="../index.html">
 				<div class="navigation">
 					<h2>Return to the Time Machine</h2></a>
 				</div>
-		
+
+				<div class="folder-bar">
+					<div class="folder" onclick="showCategory('politics')">📁 Political & Global</div>
+					<div class="folder" onclick="showCategory('tech')">📁 Tech Advancements</div>
+					<div class="folder" onclick="showCategory('culture')">📁 Pop Culture</div>
+				  </div>
+				  
+				  <div class="event-section" id="politics">
+					<h2>Political & Global Events</h2>
+					<div class="event-container" id="politics-container"></div>
+				  </div>
+				  
+				  <div class="event-section" id="tech">
+					<h2>Tech Advancements</h2>
+					<div class="event-container" id="tech-container"></div>
+				  </div>
+				  
+				  <div class="event-section" id="culture">
+					<h2>Pop Culture Moments</h2>
+					<div class="event-container" id="culture-container"></div>
+				  </div>
+
+				  
 		<nav id="links">
-			<!-- Put links to other pages (including the homepage) here. -->
 		</nav>
+		</div>
 	</main>
 </body>
 </html>
