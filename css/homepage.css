@@ -23,28 +23,39 @@ body {
   line-height: 1.6;
   max-width: 700px;
 }
-
 .cutscene {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100vh;
-  background: black;
+  height: 100%;
+  background: radial-gradient(ellipse at center, #000000 0%, #222222 100%);
+  color: #00ffcc;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #00ffe1;
-  font-size: 2rem;
-  z-index: 999;
-  animation: pulse 2s infinite;
+  z-index: 9999;
+  flex-direction: column;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.time-portal p {
+  animation: pulse 1s infinite;
+  font-family: monospace;
+  text-align: center;
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.1); opacity: 0.8; }
-  100% { transform: scale(1); opacity: 1; }
+  0% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 0.2; transform: scale(1); }
 }
 
-
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 .body {
   font-family: 'Press Start 2P', cursive;
   color: #d4aad6;
@@ -182,35 +193,3 @@ h1, h2, h3 {
 .navButton {
   animation: glowPulse 2s infinite ease-in-out;
 }
-
-
-#robot-img {
-  width: 100px;
-  cursor: pointer;
-  animation: floatBot 3s ease-in-out infinite;
-}
-
-@keyframes floatBot {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
-}
-
-#speech-bubble {
-  background-color: #fff;
-  border: 2px solid #a3b5c4;
-  padding: 10px;
-  border-radius: 10px;
-  width: 240px;
-  font-size: 13px;
-  color: #333;
-  position: absolute;
-  bottom: 110px; 
-  right: 10px;   
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-  z-index: 1001;
-}  
-
-.hidden {
-  display: none;
-}
-
