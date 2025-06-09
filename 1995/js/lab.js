@@ -98,14 +98,9 @@ $(document).ready(function() {
         2004: {
             pop: "Mean Girls became a cultural reference point.",
             news: "Facebook was founded.",
-            tech: "Gmail was introduced by Google.",
-            imageSrcs: {
-                pop: './img/windows-xp-star-folder.png',
-                news: '../img/YouTube_logo_2005.svg',
-                tech: './img/closebuttonicon.png'
-            }
-        }
-    }
+            tech: "Gmail was introduced by Google."
+        },
+    };
 
 
   $('#year-select').on('change', function () {

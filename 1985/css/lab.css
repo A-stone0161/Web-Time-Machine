@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 20px;
   background-image: repeating-linear-gradient(
-    45deg,
+    32deg,
     #000080,
     #000080 10px,
     #000066 10px,
@@ -16,10 +16,10 @@ body {
 h1 {
   font-size: 3rem;
   text-align: center;
-  color: #FFFF00; /* bright yellow */
-  text-shadow: 2px 2px #FF00FF; /* pink shadow */
+  color: #FFFF00; 
+  text-shadow: 2px 2px #FF00FF; 
   font-family: 'Impact', sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 h2 {
@@ -28,6 +28,24 @@ h2 {
   padding-bottom: 5px;
   margin-bottom: 20px;
   font-family: 'Courier New', monospace;
+}
+
+h3 {
+  color: #ff5e00;
+  border: 3px dashed #ff0000;
+  padding: 5px;
+  margin: 20px;
+  width: 292px;
+  font-family: 'Courier New', monospace;
+}
+
+h4 {
+  font-size: 2rem;
+  text-align: center;
+  color: #8a2cdc; 
+  text-shadow: 2px 2px #FF00FF; 
+  font-family: 'Impact', sans-serif;
+  margin-bottom: 20px;
 }
 
 .folder-bar {
@@ -39,14 +57,14 @@ h2 {
 }
 
 .folder {
-  background: #C0C0C0;
+  background: #adadad;
   border: 2px outset #ffffff;
   padding: 10px 20px;
   font-weight: bold;
   font-family: 'Courier New', monospace;
   color: #000;
   cursor: pointer;
-  box-shadow: inset -1px -1px 0 #000, inset 1px 1px 0 #fff;
+  box-shadow: inset -1px -1px 0 #000, inset 1px 1px 0 #d20909;
   transition: background-color 0.3s;
 }
 
