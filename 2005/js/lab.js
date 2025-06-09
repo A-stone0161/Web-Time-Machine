@@ -1,21 +1,87 @@
 // index.js - purpose and description here
-// Author: Your Name
+// Author: Emily Valdez
 // Date:
 
-// Constants
-
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
-
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+const allSections = ['politics', 'tech', 'culture'];
+				
+					function showCategory(id) {
+					  allSections.forEach(section => {
+						document.getElementById(section).style.display = (section === id) ? 'block' : 'none';
+					  });
+					}
+				
+					const eventsData = {
+					  politics: [
+						{
+						  title: "Hurricane Katrina",
+						  description: "Hurricane Katrina devastated New Orleans, displacing hundreds of thousands.",
+						  quote: `"We’ve been stuck in Houston for days now... I miss home." — Anonymous evacuee`,
+						  img: "https://www.britannica.com/event/Hurricane-Katrina"
+						},
+						{
+						  title: "London Bombings (7/7)",
+						  description: "Coordinated terrorist attacks on London transit shocked the world.",
+						  quote: `"We were stuck underground for what felt like forever." — Raj, 29, commuter`,
+						  img: "https://www.britannica.com/event/London-bombings-of-2005"
+						}
+					  ],
+					  tech: [
+						{
+						  title: "YouTube is Born",
+						  description: "The world’s biggest video platform launched in 2005.",
+						  quote: `"Just uploaded a cat clip... pretty cool!" — Student, CA`,
+						  img: "https://www.soundandvision.com/content/flashback-2005-youtube-born-0"
+						},
+						{
+						  title: "Google Maps Launches",
+						  description: "Google Maps changed how we find places online.",
+						  quote: `"Zooming into my house like a spy—wild!" — Forum user, 2005`,
+						  img: "https://blog.google/products/maps/look-back-15-years-mapping-world/"
+						}
+					  ],
+					  culture: [
+						{
+						  title: "Kanye Releases *Late Registration*",
+						  description: "A genre-defining album dropped August 2005.",
+						  quote: `"‘Gold Digger’ is inescapable and genius." — Blogger, MySpace`,
+						  img: "https://en.wikipedia.org/wiki/File:Late_registration_cd_cover.jpg"
+						},
+						{
+						  title: "*Brokeback Mountain* Sparks Talk",
+						  description: "Ang Lee’s film reshaped LGBTQ+ cinema visibility.",
+						  quote: `"First time I saw someone like me on screen." — Anonymous diary`,
+						  img: "http://yvettecandraw.blogspot.com/2012/06/its-been-long-time-since-ive-allowed.html"
+						}
+					  ]
+					};
+				
+					function createCards(category) {
+					  const container = document.getElementById(`${category}-container`);
+					  eventsData[category].forEach((event, index) => {
+						const card = document.createElement('div');
+						card.className = 'event-card';
+						const quoteId = `${category}-quote-${index}`;
+						const imgId = `${category}-img-${index}`;
+				
+						card.innerHTML = `
+						  <div class="event-title">${event.title}</div>
+						  <div class="event-description">${event.description}</div>
+						  <div class="quote-box" id="${quoteId}">${event.quote}</div>
+						  <img src="${event.img}" class="event-image" id="${imgId}" alt="${event.title}">
+						`;
+				
+						card.addEventListener('click', () => {
+						  const quoteEl = document.getElementById(quoteId);
+						  const imgEl = document.getElementById(imgId);
+						  const isVisible = quoteEl.style.display === 'block';
+						  quoteEl.style.display = isVisible ? 'none' : 'block';
+						  imgEl.style.display = isVisible ? 'none' : 'block';
+						});
+				
+						container.appendChild(card);
+					  });
+					}
+				
+					// Generate cards on page load
+					['politics', 'tech', 'culture'].forEach(createCards);
+			

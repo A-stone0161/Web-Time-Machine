@@ -1,0 +1,113 @@
+<!--Nadia Yasin HTML
+HTML for 1995-2005 Page-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> 1995 </title>
+  	<meta charset="UTF-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/lab2.css">
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+</head>
+
+<body>
+
+    <script>
+        $(document).ready(function() {
+            $('#show-content').click(function() {
+                $('#content').show();
+                $(this).hide();
+            });
+        });
+    </script>
+
+    <div id="opening-computer">
+        <div id="computer-screen">
+            <h2 id="starter-text">Oops, almost forgot! </br> You'll have to hit the start button first! </h2>
+        </br>
+
+            <!-- Got help from Wesbot to create buttons that changes the images on the site -->
+            <!-- Clickable image button that changes the backgroundof the site -->
+            <img id="first-button" src="./img/windows-start-button-trans.png" onclick="changeBackgroundImage(this); firstButtonClicked();">
+        </div> 
+    </div>
+
+    <!-- <img id="second-button" src="./img/mycomputericontrans.webp" style="display: none;" onclick="document.getElementById('content').style.display='block'; 
+    this.style.display='none'; contentButtonClicked(); document.getElementById('show-content').style.backgroundColor = 'yellow';"> -->
+
+    <img id="second-button" src="./img/mycomputericontrans.webp" style="display: none;" onclick="contentButtonClicked();">
+
+    <div id="homepage-info" style="display: none;">
+        <p class="info">💾Info</p>
+        <h2 class="info1"> During 1995, Windows technology was new and exciting, many people had no idea how to use it!</h2>
+        <p class="info2"> We decied to store the files for the decades notable moments here, where they can live forever! 
+            Below you'll find many desktop icons, we are only interested in one though. See if you can figure out which! Heads up, the 
+            power button will send you out of the experience. </p>
+
+            <img class="close-button2" src="./img/closeprogrambutton.png" onclick="this.style.display='none'; closeInfoButtonClicked();">
+
+    </div>
+
+    
+
+    <div id="desktop-icons" style="display: none;">
+        <div class="icons"> 
+            <img id="icon1" src="img/recyleicon.png" alt="recyleicon" style="width: 3.5%">
+            <a href="../1995/index.html">
+                <img id="icon2" src="img/powerbuttonicon.png" alt="powerbuttonicon" style="width:3.5%">
+            </a>
+            <img id="icon3" src="img/solitareicon.png" alt="solitareicon" style="width:4.5%">
+            <img id="icon4" src="img/zipfileiconpng.png" alt="zipfileicon" style="width:3.5%">
+            <img id="icon5" src="img/folderdestoptrans.png" alt="filmfoldericon" style="width:3.5%">
+            <img id="icon6" src="img/windowsdefendericon.png" alt="windowsdefendericon" style="width:3.5%">
+            <img id="icon7" src="img/triplefoldericon.png" alt="triplefoldericon" style="width:11.5%">
+            <img id="icon8" src="img/worddocicon.png" alt="worddocicon" style="width:3.5%">
+            <img id="icon9" src="img/printicon.png" alt="printicon" style="width:3.5%">
+        </div> 
+    </div>
+
+    <div id="content" style="display: none;">
+        <p id="title-for-content">📂 Documents</p>
+
+        <img class="close-button" src="./img/closeprogrambutton.png" onclick="this.style.display='none'; closeWindowButtonClicked();">
+    
+
+        
+        <h1>A Review of the Years 1995 - 2004!</h1>
+
+        <label for="year-select">Choose a year:</label>
+        <select id="year-select">
+            <option value="">Select a year</option>
+            <!-- Generate year drop downs from 1995 to 2005 -->
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                const select = document.getElementById("year-select");
+                for (let year = 1995; year <= 2004; year++) {
+                    const option = document.createElement("option");
+                    option.value = year;
+                    option.textContent = year;
+                    select.appendChild(option);
+                    }
+                });
+            </script>
+        </select>
+
+        <div id="year-info" class="info-box">
+            <h2 id="info-year"></h2>
+
+            <h3>Political & Global Events</h3>
+            <p id="news"></p>
+
+            <h3>Tech Innovations</h3>
+            <p id="technology"></p>
+
+            <h3>Pop Culture Moments</h3>
+            <p id="pop-culture"></p>
+        </div>
+    </div>
+
+</body>
+</html>

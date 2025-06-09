@@ -7,16 +7,48 @@
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
+	<main>
+		<div id="content">
+			<p>Worldly Events From</p>
 			<h1>2015</h1>
+
+</div>
+
 			<a href="../index.html">
 				<div class="navigation">
 					<h2>Return to the Time Machine</h2></a>
 				</div>
-		
+
+				<div class="folder-bar">
+					<div class="folder" onclick="showCategory('politics')">📁 Political / Global</div>
+					<div class="folder" onclick="showCategory('tech')">📁 Tech Stuff</div>
+					<div class="folder" onclick="showCategory('culture')">📁 Pop Culture</div>
+				  </div>
+				  
+				  <div class="event-section" id="politics">
+					<h2>Political & Global Events</h2>
+					<div class="event-container" id="politics-container"></div>
+				  </div>
+				  
+				  <div class="event-section" id="tech">
+					<h2>Tech Innovations</h2>
+					<div class="event-container" id="tech-container"></div>
+				  </div>
+				  
+				  <div class="event-section" id="culture">
+					<h2>Pop Culture Moments</h2>
+					<div class="event-container" id="culture-container"></div>
+				  </div>				  
+				  <div class="popup-window" style="top: 100px; left: 80px;">💬 AOL Instant Messenger just signed in!</div>
+
+				  
 		<nav id="links">
 		</nav>
+		</div>
 	</main>
 </body>
 </html>
