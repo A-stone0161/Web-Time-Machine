@@ -1,6 +1,6 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom right, #f2f2f2, #ffffff);
+    font-family: 'Georgia', sans-serif;
+    background: linear-gradient(to bottom, #11161c, #36465d);
     color: #333;
     margin: 0;
     padding: 20px;
@@ -14,8 +14,9 @@ body {
   }
   
   h2 {
-    color: #555;
+    color: #19212b;
     border-bottom: 2px solid #eee;
+    text-align: center;
     padding-bottom: 5px;
     margin-bottom: 20px;
   }
@@ -137,14 +138,7 @@ body {
     max-width:100%;
     margin: 20px;
     padding: 20px;
-    border: solid 7px #000000;
-    background-color: #ffffff;
+    background-color: #e9e9e9;
 }
 
-@font-face {
-    font-family: 'MyFont';
-    src: url('../img/FlowerBlossom-JpA9a.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
