@@ -18,3 +18,15 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+
+.row {
+    display: flex;
+}
+
+.row2 {
+    display: flex;
+}
+
+.column {
+    flex: 33.3%;
+}
