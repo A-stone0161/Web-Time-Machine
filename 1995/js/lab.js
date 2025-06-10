@@ -96,13 +96,6 @@ $(document).ready(function() {
             }
         },
         2004: {
-<<<<<<< Updated upstream
-            pop: "Mean Girls became a cultural reference point.",
-            news: "Facebook was founded.",
-            tech: "Gmail was introduced by Google."
-        },
-    };
-=======
             pop: "Mean Girls became a cultural reference point. This films has had a lasting legacy showcased the different cultures of high schools in America. It attempted to mirror society by capturing the nuances of adolescence and the inherent desire to belong.",
             news: "Facebook was founded. Facebook revolutionized the way people connect and communicate. It was not only a social media platform but a global hub where thousands of users could exchange ideas, share life moments, and engage with content from every corner of the world.",
             tech: "Gmail was introduced by Google. Gmail become a cornerstone of email communication, offering a dynamic platform that caters to both personal and professional needs. Its societal integration changed the game for technological comunication in professional settings.",
@@ -113,7 +106,6 @@ $(document).ready(function() {
             }
         }
     }
->>>>>>> Stashed changes
 
 
   $('#year-select').on('change', function () {
