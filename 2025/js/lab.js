@@ -2,10 +2,14 @@
 // Author: Your Name
 // Date:
 
-// Add a button to each special-sections
-$().append("<button class='button-special'>Change Theme</button>");
-// Add a click listener for each Make Special button
-$(".theme .button-special").click(function() {
-    // add or remove the special class from its parent section.
-    $(this).parent().toggleClass("special");
+$(document).ready(function() {
+    // button
+    $("#head").append("<button class='button-special'>Change Theme</button>");
+
+    // Add click listener to theme
+    $(document).on("click", ".button-special", function () {
+        $("body").toggleClass("special");
+    });
+    
 });
+
