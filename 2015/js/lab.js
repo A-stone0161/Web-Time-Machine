@@ -2,6 +2,14 @@
 // Author: Sophia McClanahan
 // Date: 6/9/2025
 
+document.querySelectorAll('.tabs a').forEach(link => {
+  link.addEventListener('click', function () {
+    document.querySelectorAll('.tabs a').forEach(a => a.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+
+
 const allSections = ['politics', 'tech', 'culture'];
 
 function showCategory(id) {
