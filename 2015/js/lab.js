@@ -2,15 +2,6 @@
 // Author: Sophia McClanahan
 // Date: 6/9/2025
 
-document.querySelectorAll('.tabs a').forEach(link => {
-  link.addEventListener('click', function () {
-    document.querySelectorAll('.tabs a').forEach(a => a.classList.remove('active'));
-    this.classList.add('active');
-  });
-});
-
-
-const allSections = ['politics', 'tech', 'culture'];
 
 function showCategory(id) {
   allSections.forEach(section => {
@@ -30,16 +21,16 @@ const eventsData = {
       img: "img/2015marriage.jpg"
     },
     {
-      title: "European Refugee Crisis",
-      description: "Over 1 million migrants entered Europe amid conflicts in the Middle East.",
-      quote: `"We are witnessing a refugee crisis of a magnitude not seen since WWII." — UNHCR official`,
-      img: "img/2015refugee.webp"
+      title: "Global Pandemic",
+      description: "COVID-19 caused wide-spread illness, death, and disruption worldwide.",
+      quote: `"It’s a scary time. We don’t want to add fuel to the fire. Good information won’t cure us, but it will help to calm us." — Pediatrics Professor Ruth Parker`,
+      img: "img/covid.png"
     },
     {
-      title: "Paris Terror Attacks",
-      description: "Coordinated attacks in Paris killed 130+ people; ISIS claimed responsibility.",
-      quote: `"We are at war." — French President François Hollande`,
-      img: "img/ParisAttacks.jpg"
+      title: "Russia Invades Ukraine",
+      description: "Russian President Putin orders Russian forces to launch a full-scale invasion on their neighbor.",
+      quote: `"Wait for us, we will definitely all come back." — Unnamed Ukrainian Soldier.`,
+      img: "img/ukraine.png"
     }
   ],
   tech: [
