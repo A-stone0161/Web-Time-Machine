@@ -55,7 +55,7 @@ const eventsData = {
   ],
   culture: [
     {
-      title: "Out of the Shadows",
+      title: "'Out of the Shadows'",
       description: "Michael Bay releases his second Teenage Mutant Ninja Turtles Movie.",
       quote: `"True acceptance comes from within." — Leonardo`,
       img: "img/tmnt.png"
@@ -67,10 +67,10 @@ const eventsData = {
       img: "img/onedirection.jpg"
     },
     {
-      title: "'Empire' Dominates TV",
-      description: "The show breaks ratings records and becomes a cultural phenomenon.",
-      quote: `"You want Cookie? You can’t handle Cookie." — Cookie Lyon`,
-      img: "img/empire.jpg"
+      title: "Tensions Rise at the Oscars",
+      description: "Will Smith walks on stage and slaps comedian Chris Rock across the face.",
+      quote: `"Keep my wife's name out your fucking mouth!" — Will Smith`,
+      img: "img/slappening.png"
     }
   ]
 };
