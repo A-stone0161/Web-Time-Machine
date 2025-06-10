@@ -55,10 +55,10 @@ const eventsData = {
   ],
   culture: [
     {
-      title: "Drake's 'Hotline Bling'",
-      description: "The music video sparked a massive meme craze.",
-      quote: `"Ever since I left the city, you..." — Everyone on Vine`,
-      img: "img/drakememe.jpg"
+      title: "Out of the Shadows",
+      description: "Michael Bay releases his second Teenage Mutant Ninja Turtles Movie.",
+      quote: `"True acceptance comes from within." — Leonardo`,
+      img: "img/tmnt.png"
     },
     {
       title: "Zayn Malik Leaves One Direction",
