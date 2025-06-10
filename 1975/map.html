@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Leaflet Map with GeoJSON</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Normalize and Leaflet CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    #map {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .icon {
+      max-width: 70%;
+      max-height: 70%;
+      margin: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <script>
+    window.addEventListener('load', function () {
+      // Initialize map
+      const map = L.map('map').setView([20, 0], 2);
+
+      // Add tile layer
+      L.tileLayer('https://api.maptiler.com/maps/backdrop/{z}/{x}/{y}.png?key=6SYBeRFXhiSXjReFhMmN', {
+        attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+      }).addTo(map);
+
+      // GeoJSON data
+      const geojsonData = {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "Iraq": "After the invasion, the country experienced a period of instability that was leveraged for economic reforms and experimentation."
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [43.4363, 33.0750]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "Chile": "Under General Augusto Pinochet, the country was used as a 'model' for free market reforms, implemented through a period of economic and political turmoil."
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-69.7651, -26.7883]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "Poland": "After the collapse of communism, 'shock therapy' reforms were implemented, leading to increased poverty and unemployment."
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [19.2862, 52.1150]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "Bolivia": "The country's hyperinflation in the 1980s was used as a backdrop for implementing unpopular economic reforms."
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-64.2769, -16.9476]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "Peru": "Under the Alberto Fujimori administration, economic reforms were implemented amidst a crisis."
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-75.3294, -10.1204]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "United States of America": "The book analyzes the use of disaster capitalism in the US, including the impact of Hurricane Katrina."
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-97.8641, 39.4150]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "The University of Chicago": "The Chicago Boys were a group of Chilean economists... Reagan and Thatcher were influenced by Chile's reforms."
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-87.6005, 41.7907]
+            }
+          }
+        ]
+      };
+
+      // Add GeoJSON markers with popups
+      L.geoJSON(geojsonData, {
+        pointToLayer: function (feature, latlng) {
+          const title = Object.keys(feature.properties)[0];
+          const content = `<strong>${title}</strong><br>${feature.properties[title]}`;
+          return L.marker(latlng).bindPopup(content);
+        }
+      }).addTo(map);
+    });
+  </script>
+
+</body>
+</html>

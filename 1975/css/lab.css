@@ -124,3 +124,6 @@ img {
   max-width: 100%;
   border-radius: 8px; /* Optional: rounded corners */
 }
+
+#map { 
+  height: 350px; }
