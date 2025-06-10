@@ -1,10 +1,7 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - 1975 - 85
+// Author: Annabelle Stone
+// Date: 06/09/2025
 
-// Constants
-
-// Functions
 
 function showTab(tabId) {
   const allTabs = document.querySelectorAll('.tabContent');
