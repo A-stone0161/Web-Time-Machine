@@ -2,7 +2,6 @@
 // Author: Sophia McClanahan
 // Date: 6/9/2025
 
-const allSections = ['politics', 'tech', 'culture'];
 
 function showCategory(id) {
   allSections.forEach(section => {
@@ -22,16 +21,16 @@ const eventsData = {
       img: "img/2015marriage.jpg"
     },
     {
-      title: "European Refugee Crisis",
-      description: "Over 1 million migrants entered Europe amid conflicts in the Middle East.",
-      quote: `"We are witnessing a refugee crisis of a magnitude not seen since WWII." — UNHCR official`,
-      img: "img/2015refugee.webp"
+      title: "Global Pandemic",
+      description: "COVID-19 caused wide-spread illness, death, and disruption worldwide.",
+      quote: `"It’s a scary time. We don’t want to add fuel to the fire. Good information won’t cure us, but it will help to calm us." — Pediatrics Professor Ruth Parker`,
+      img: "img/covid.png"
     },
     {
-      title: "Paris Terror Attacks",
-      description: "Coordinated attacks in Paris killed 130+ people; ISIS claimed responsibility.",
-      quote: `"We are at war." — French President François Hollande`,
-      img: "img/ParisAttacks.jpg"
+      title: "Russia Invades Ukraine",
+      description: "Russian President Putin orders Russian forces to launch a full-scale invasion on their neighbor.",
+      quote: `"Wait for us, we will definitely all come back." — Unnamed Ukrainian Soldier.`,
+      img: "img/ukraine.png"
     }
   ],
   tech: [
@@ -42,24 +41,24 @@ const eventsData = {
       img: "img/teslaautopilot.jpg"
     },
     {
-      title: "Apple iPhone 6s Released",
-      description: "Apple introduced 3D Touch and Live Photos.",
-      quote: `"It's like the phone is reading my mind." — Tech reviewer, 2015`,
-      img: "img/iphone6s.webp"
+      title: "3D Printing: Metal",
+      description: "Manufacturing metal parts has never been more easy.",
+      quote: `"3D printing will massively reduce the cost of certain products as the cost of labor is removed." — Peter Diamandis`,
+      img: "img/metal.png"
     },
     {
-      title: "Twitter Adds Heart Button",
-      description: "The 'Favorite' star became a 'Like' heart icon on Twitter.",
-      quote: `"It’s a heart, people. Not a soul." — Tweet from @internetuser`,
-      img: "img/twitterhearts.webp"
+      title: "The Rise of Artificial Intelligence",
+      description: "AI transitioned from research labs into various everyday technologies.",
+      quote: `"Some people call this artificial intelligence, but the reality is this technology will enhance us. So instead of artificial intelligence, I think we’ll augment our intelligence." — Ginni Rometty`,
+      img: "img/AI.png"
     }
   ],
   culture: [
     {
-      title: "Drake's 'Hotline Bling'",
-      description: "The music video sparked a massive meme craze.",
-      quote: `"Ever since I left the city, you..." — Everyone on Vine`,
-      img: "img/drakememe.jpg"
+      title: "'Out of the Shadows'",
+      description: "Michael Bay releases his second Teenage Mutant Ninja Turtles Movie.",
+      quote: `"True acceptance comes from within." — Leonardo`,
+      img: "img/tmnt.png"
     },
     {
       title: "Zayn Malik Leaves One Direction",
@@ -68,10 +67,10 @@ const eventsData = {
       img: "img/onedirection.jpg"
     },
     {
-      title: "'Empire' Dominates TV",
-      description: "The show breaks ratings records and becomes a cultural phenomenon.",
-      quote: `"You want Cookie? You can’t handle Cookie." — Cookie Lyon`,
-      img: "img/empire.jpg"
+      title: "Tensions Rise at the Oscars",
+      description: "Will Smith walks on stage and slaps comedian Chris Rock across the face.",
+      quote: `"Keep my wife's name out your fucking mouth!" — Will Smith`,
+      img: "img/slappening.png"
     }
   ]
 };
