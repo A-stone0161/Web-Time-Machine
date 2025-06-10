@@ -41,16 +41,16 @@ const eventsData = {
       img: "img/teslaautopilot.jpg"
     },
     {
-      title: "Apple iPhone 6s Released",
-      description: "Apple introduced 3D Touch and Live Photos.",
-      quote: `"It's like the phone is reading my mind." — Tech reviewer, 2015`,
-      img: "img/iphone6s.webp"
+      title: "3D Printing: Metal",
+      description: "Manufacturing metal parts has never been more easy.",
+      quote: `"3D printing will massively reduce the cost of certain products as the cost of labor is removed." — Peter Diamandis`,
+      img: "img/metal.png"
     },
     {
-      title: "Twitter Adds Heart Button",
-      description: "The 'Favorite' star became a 'Like' heart icon on Twitter.",
-      quote: `"It’s a heart, people. Not a soul." — Tweet from @internetuser`,
-      img: "img/twitterhearts.webp"
+      title: "The Rise of Artificial Intelligence",
+      description: "AI transitioned from research labs into various everyday technologies.",
+      quote: `"Some people call this artificial intelligence, but the reality is this technology will enhance us. So instead of artificial intelligence, I think we’ll augment our intelligence." — Ginni Rometty`,
+      img: "img/AI.png"
     }
   ],
   culture: [
